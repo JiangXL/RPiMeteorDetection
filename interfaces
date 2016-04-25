@@ -1,0 +1,5 @@
+#add this code to /etc/network/interfaces
+auto wlan0 #start at begain
+allow-hotplug wlan0
+                          #SSID
+                          
