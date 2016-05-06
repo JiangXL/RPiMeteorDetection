@@ -2,14 +2,17 @@
 #
 
 # send ip check internet and send ip log. 
-2 * * * * /     
+2 * * * * /home/pi/Desktop/rmd_bypy.sh
 
 #syncup observe date every day at 01:01
 
+58 23 * * *  bypy syncup /home/pi/Desktop/AASUSTC
+
+sudo apt-get install gnome-schedule
 
 
 #forme http://www.cnblogs.com/peida/archive/2013/01/08/2850483.html
-
+#https://www.raspberrypi.org/documentation/linux/usage/cron.md
 使用者权限文件：
 文件：
 /etc/cron.deny
