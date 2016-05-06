@@ -1,5 +1,14 @@
-#forme http://www.cnblogs.com/peida/archive/2013/01/08/2850483.html
 #Comand to set command run in setting time by Crontab.
+#
+
+# send ip check internet and send ip log. 
+2 * * * * /     
+
+#syncup observe date every day at 01:01
+
+
+
+#forme http://www.cnblogs.com/peida/archive/2013/01/08/2850483.html
 
 使用者权限文件：
 文件：
