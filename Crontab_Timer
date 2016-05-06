@@ -1,11 +1,9 @@
 #Comand to set command run in setting time by Crontab.
-#
 
 # send ip check internet and send ip log. 
 2 * * * * /home/pi/Desktop/rmd_bypy.sh
 
 #syncup observe date every day at 01:01
-
 58 23 * * *  bypy syncup /home/pi/Desktop/AASUSTC
 
 sudo apt-get install gnome-schedule
