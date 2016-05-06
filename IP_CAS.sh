@@ -55,6 +55,9 @@ bypy.py upload /home/pi/Desktop/ip.log -v
 
 sleep  1h
 done
+
+>>/home/pi/Desktop/ip.log
+
 #直接在shell中生存log文件
 #http://www.cnblogs.com/smbx-ztbz/p/4607007.html
 
