@@ -55,6 +55,8 @@ bypy.py upload /home/pi/Desktop/ip.log -v
 
 sleep  1h
 done
+#直接在shell中生存log文件
+#http://www.cnblogs.com/smbx-ztbz/p/4607007.html
 
 
 #Code in Windows will make erro!!!!!!!!!!!
