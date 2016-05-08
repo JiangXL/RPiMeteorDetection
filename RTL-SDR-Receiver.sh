@@ -1,5 +1,5 @@
-#here is command to install qtcsdr in RP
-#qtcsdr
+#!/bin/bash
+##########################################################################
 #qtcsdr makes a ham transceiver out of your Raspberry Pi 2 and RTL-SDR!
 #https://github.com/ha7ilm/qtcsdr
 
@@ -10,9 +10,10 @@
 #./rpi-test.sh
 
 #I want to run stl_sdr receiver withou GUI to acclalte
-#https://github.com/ha7ilm/rtl-sdr
-#我想直接用libcsdr直接输出音频，减少资料利用。
-#!/bin/bash
+#Why this script run to writing err when choose "y"or "no"
+#我想直接用libcsdr直接输出音频，减少资源利用
+#不到为什么进行if选择的时候，提示脚本语法错误
+###########################################################################
 echo "This is the qtcsdr install script for Raspbian Jessie."
 read -r -p "It will install qtcsdr along with all of its dependencies. Are you sure? [y/n] " response
 if [[ $response =~ ^([yY][eE][sS]|[yY])$ ]]
