@@ -4,7 +4,7 @@ logfile=/home/pi/Desktop/ip.log
 {
 while true
 do
-# check network availability
+# Login SUSTC CAS
     echo ">----------------------------------------------------"
     echo "Current time: `date '+%F %T'`  "
     URL=`curl --head baidu.com 2> /dev/null | grep "Location: http://enet.10000.gd.cn" | sed 's/Location: //'`
@@ -30,7 +30,7 @@ do
    fi
    fi
 
-
+#check network again 
   TIMEOUT=15
   SITE_TO_CHECK="open.163.com"
   RET_CODE=`curl -I -s --connect-timeout $TIMEOUT $SITE_TO_CHECK -w %{http_code} | tail -n1`
@@ -43,6 +43,7 @@ do
         # make log info
 #       echoecho "Current time: `date '+%F %T'`  "Current time: `date '+%F %T'`. Enjoy it $ETH0_IP_ADDR"
 #       bypy.py upload /home/pi/Desktop/ip.log -v
+# I don't known why it run bad :(
  break
   else
   echo "Network not ready, wait..."
@@ -52,6 +53,7 @@ done
 
 # get the IP address of eth0, e.g. "192.168.16.5"
 ETH0_IP_ADDR=`/sbin/ifconfig eth0 | sed -n "2,2p" | awk '{print substr($2,1)}'`
+
 
 #logfile=/home/pi/Desktop/ip.log
 
