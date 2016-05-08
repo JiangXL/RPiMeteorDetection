@@ -19,7 +19,7 @@ do
     ACTION=`echo "$FORM" | grep "<form " | sed 's/.*action="\(.*\)" .*/\1/'`
     LT=`echo "$FORM" | grep '<input type="hidden" name="lt" ' | sed 's/.*value="\(.*\)" .*/\1/'`
     EXEC=`echo "$FORM" | grep '<input type="hidden" name="execution" ' | sed 's/.*value="\(.*\)" .*/\1/'`
-    DATA="username=11510512&password=288756&lt=$LT&execution=$EXEC&_eventId=submit&submit=LOGIN"
+    DATA="username=youracount&password=yourpassword&lt=$LT&execution=$EXEC&_eventId=submit&submit=LOGIN"
     RESULT=`curl -L --data "$DATA" "http://weblogin.sustc.edu.cn$ACTION" 2> /dev/null`
 
    if echo $RESULT | grep -q "<h2>success"
