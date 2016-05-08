@@ -41,6 +41,5 @@ Date Store:
 
    bypy.py syncdown 
    or
-
    bypy.py downdir /
   
