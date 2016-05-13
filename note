@@ -9,3 +9,6 @@ Meteor Scatter Softwave:
 gqrx:http://gqrx.dk/blog/meteor-scatter-reception-with-rtl-sdr-and-gqrx
 WSJT:http://physics.princeton.edu/pulsar/k1jt/wsjt.html
 MSHV:http://lz2hv.org/mshv
+-------------RTL-SDR Receiver------------------------------------------
+https://github.com/roger-/pyrtlsdr
+https://github.com/mariocannistra/rtl-power-fftw
