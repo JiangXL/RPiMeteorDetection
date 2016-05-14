@@ -1,4 +1,7 @@
 #!/bin/bash
+
+rtl_sdr -s 1.8e6 -f 55992300 -p 1500 -g 20  - | play -r 48000 -t s16 -L -c 1  -
+
 ##########################################################################
 #qtcsdr makes a ham transceiver out of your Raspberry Pi 2 and RTL-SDR!
 #https://github.com/ha7ilm/qtcsdr
