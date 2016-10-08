@@ -63,5 +63,6 @@ ETH0_IP_ADDR=`/sbin/ifconfig eth0 | sed -n "2,2p" | awk '{print substr($2,1)}'`
 #直接在shell中生存log文件，不过终端就不会显示了
 #http://www.cnblogs.com/smbx-ztbz/p/4607007.html
 #http://shumeipai.nxez.com/2014/03/18/let-raspberry-pi-ip-address-is-automatically-reported-to-the-mailbox.html
+http://blog.csdn.net/lejuo/article/details/4040452
 
 
