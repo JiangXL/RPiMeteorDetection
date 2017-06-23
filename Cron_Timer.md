@@ -8,11 +8,8 @@ crontab -e
 #syncup observe date every day at 01:01
 58 23 * * *  /usr/local/sbin/bypy syncup /home/pi/Desktop/AASUSTC
 
-#GUI Programe
-sudo apt-get install gnome-schedule
 
-
-#forme http://www.cnblogs.com/peida/archive/2013/01/08/2850483.html
+#form http://www.cnblogs.com/peida/archive/2013/01/08/2850483.html
 #https://www.raspberrypi.org/documentation/linux/usage/cron.md
 使用者权限文件：
 文件：
